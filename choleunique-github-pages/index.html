@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CholeUnique — 把复杂系统拆开、重组，再偷偷放进一点生命力。" />
+    <title>CholeUnique — Curious Builder</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23ffd900'/%3E%3Ccircle cx='22' cy='30' r='11' fill='white' stroke='%23151317' stroke-width='4'/%3E%3Ccircle cx='42' cy='30' r='11' fill='white' stroke='%23151317' stroke-width='4'/%3E%3Ccircle cx='25' cy='32' r='5' fill='%23151317'/%3E%3Ccircle cx='45' cy='32' r='5' fill='%23151317'/%3E%3Cpath d='M23 49c6 4 12 4 18 0' fill='none' stroke='%23151317' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"><span>嗨</span></div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="返回顶部">CHOLE<span>UNIQUE</span></a>
+      <nav aria-label="主导航">
+        <a href="#brain">脑回路</a>
+        <a href="#work">奇怪项目</a>
+        <a href="#hello">打个招呼</a>
+      </nav>
+      <a class="github-pill" href="https://github.com/CholeUnique" target="_blank" rel="noreferrer">GITHUB ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">AI / AGENT / 3D / GIS / STRANGE LITTLE IDEAS</p>
+          <h1 id="hero-title">I MAKE<br /><span>COMPLEX</span><br />THINGS<br />PLAY.</h1>
+          <p class="intro">嗨，我是 CholeUnique。<br />喜欢把难懂的东西拆开、重组，再偷偷放进一点生命力。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">看看我又在折腾什么 <span>↓</span></a>
+            <button class="button button-ghost" id="moodButton" type="button">换个狗狗频道</button>
+          </div>
+        </div>
+
+        <div class="mascot-stage" id="mascotStage">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <p class="watch-label">THEY ARE WATCHING YOUR CURSOR</p>
+          <div class="mascot-wrap">
+            <img src="./assets/dachshund-trio.png" alt="三只穿着黄色校车服的腊肠狗数字吉祥物" />
+            <div class="pupil pupil-l1" data-eye></div>
+            <div class="pupil pupil-l2" data-eye></div>
+            <div class="pupil pupil-m1" data-eye></div>
+            <div class="pupil pupil-m2" data-eye></div>
+            <div class="pupil pupil-r1" data-eye></div>
+            <div class="pupil pupil-r2" data-eye></div>
+          </div>
+          <div class="speech" id="speech">我们负责观察世界，她负责重新排列它。</div>
+        </div>
+
+        <div class="scroll-note">SCROLL TO ENTER THE BRAIN <span>↘</span></div>
+      </section>
+
+      <section class="ticker" aria-label="能力关键词">
+        <div class="ticker-track">
+          <span>AI AGENTS ✦ KNOWLEDGE UNIVERSE ✦ THREE.JS ✦ VUE ✦ PYTHON ✦ DRONES ✦ GIS ✦</span>
+          <span aria-hidden="true">AI AGENTS ✦ KNOWLEDGE UNIVERSE ✦ THREE.JS ✦ VUE ✦ PYTHON ✦ DRONES ✦ GIS ✦</span>
+        </div>
+      </section>
+
+      <section class="brain section" id="brain">
+        <div class="section-kicker">01 / ABOUT MY BRAIN</div>
+        <div class="brain-heading">
+          <h2>A BRAIN<br />OFF LEASH.</h2>
+          <p>我对“能用”有一点贪心：还想让它看得懂、逛得动、记得住。</p>
+        </div>
+        <div class="mode-grid">
+          <article class="mode-card yellow-card">
+            <span>MODE 01</span>
+            <div class="mode-face" aria-hidden="true">◉‿◉</div>
+            <h3>先把黑盒<br />打开</h3>
+            <p>我不太信任只给答案、不讲过程的聪明。工具调用、引用和思考路径，都应该有迹可循。</p>
+          </article>
+          <article class="mode-card blue-card">
+            <span>MODE 02</span>
+            <div class="mode-face" aria-hidden="true">⌁ᴗ⌁</div>
+            <h3>抽象的东西<br />也应该能散步</h3>
+            <p>如果知识有关系，就让关系长成星系、图谱和路径，而不是继续躺在文件夹里。</p>
+          </article>
+          <article class="mode-card pink-card">
+            <span>MODE 03</span>
+            <div class="mode-face" aria-hidden="true">↗ᴥ↖</div>
+            <h3>认真落地<br />也认真好玩</h3>
+            <p>我喜欢脑洞，但也喜欢闭环。界面可以古灵精怪，系统必须知道自己在解决什么。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="section-kicker light">02 / SELECTED ODDITIES</div>
+        <div class="work-intro">
+          <h2>IDEAS<br />THAT KEPT<br /><em>ITCHING.</em></h2>
+          <p>有些问题一旦被我看见，<br />就会被反复拆开，直到长出另一个样子。</p>
+        </div>
+
+        <div class="project-stack">
+          <article class="project-card card-lime">
+            <div class="project-number">001</div>
+            <div class="project-copy">
+              <p>AI × KNOWLEDGE × AGENT</p>
+              <h3>NOI</h3>
+              <p class="project-desc">知识不该只是目录里的文件。于是我给它做了星系、图谱、会追溯出处的问答，还有一个把思考过程亮出来的 Agent 工作台。</p>
+              <div class="tags"><span>Vue 3</span><span>Three.js</span><span>D3</span><span>Agent UI</span></div>
+            </div>
+            <a href="https://github.com/CholeUnique/NOI_frontEnd" target="_blank" rel="noreferrer" aria-label="查看 NOI 项目">↗</a>
+          </article>
+
+          <article class="project-card card-coral">
+            <div class="project-number">002</div>
+            <div class="project-copy">
+              <p>DRONE × GIS × GOVERNANCE</p>
+              <h3>LOW ALTITUDE</h3>
+              <p class="project-desc">把天空里的飞行、地图上的位置和现实中的治理串成一条能跑通的链路：巡查、发现、派发、复核、归档。</p>
+              <div class="tags"><span>Vue 3</span><span>TypeScript</span><span>Leaflet</span><span>ECharts</span></div>
+            </div>
+            <a href="https://github.com/CholeUnique/Low-Altitude-Intelligent-Management" target="_blank" rel="noreferrer" aria-label="查看低空智慧管理项目">↗</a>
+          </article>
+
+          <article class="project-card card-sky">
+            <div class="project-number">003</div>
+            <div class="project-copy">
+              <p>GAME × BACKEND × A LITTLE CHAOS</p>
+              <h3>STRONGEST BRAIN</h3>
+              <p class="project-desc">偶尔不解决世界问题，只解决“怎么让这一局更有意思”。一套装着规则、速度和胜负心的游戏后端。</p>
+              <div class="tags"><span>JavaScript</span><span>Game Logic</span><span>Backend</span></div>
+            </div>
+            <a href="https://github.com/CholeUnique/TheStrongestBrain_Game_Backend" target="_blank" rel="noreferrer" aria-label="查看最强大脑游戏项目">↗</a>
+          </article>
+
+          <article class="project-card card-cream">
+            <div class="project-number">004</div>
+            <div class="project-copy">
+              <p>AN IDEA STILL GROWING</p>
+              <h3>MINDCLONE</h3>
+              <p class="project-desc">一个还没急着解释自己的名字。先保留未知，让它慢慢长成值得公开的样子。</p>
+              <div class="tags"><span>Experiment</span><span>Coming Soon</span></div>
+            </div>
+            <a href="https://github.com/CholeUnique/MindClone" target="_blank" rel="noreferrer" aria-label="查看 MindClone 项目">↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifesto section">
+        <p class="section-kicker">03 / SMALL MANIFESTO</p>
+        <h2>我不想只把东西做出来。<br />我想让人愿意靠近它。</h2>
+        <div class="manifesto-row">
+          <span>MAKE COMPLEXITY LEGIBLE</span>
+          <span>GIVE IDEAS A BODY</span>
+          <span>LEAVE ROOM FOR MISCHIEF</span>
+        </div>
+      </section>
+    </main>
+
+    <footer id="hello">
+      <div>
+        <p>你也有一个看起来有点怪、但就是想实现的点子吗？</p>
+        <h2>LET’S MAKE<br />THE WEIRD<br />THING WORK<span>.</span></h2>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/CholeUnique" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+      <p class="fineprint">Built with curiosity, stubbornness, and three extremely alert dachshunds.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
