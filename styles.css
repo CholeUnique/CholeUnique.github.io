@@ -133,7 +133,7 @@ button { font: inherit; }
 .blue-card { background: var(--blue); transform: translateY(40px); }
 .pink-card { background: var(--pink); }
 
-.work { background: var(--plum); color: var(--paper); min-height: 3300px; position: relative; }
+.work { background: var(--plum); color: var(--paper); min-height: 2400px; position: relative; }
 .section-kicker.light { color: rgba(255,255,255,.65); }
 .work-intro { display: grid; grid-template-columns: 1fr .55fr; align-items: end; gap: 40px; min-height: 72vh; }
 .work h2 { font-size: clamp(80px, 12vw, 190px); }
@@ -150,8 +150,10 @@ button { font: inherit; }
 .project-copy > p:first-child { font-size: 11px; font-weight: 700; letter-spacing: .15em; }
 .project-card h3 { margin: 36px 0 24px; font: 700 clamp(54px, 8vw, 124px)/.82 "Space Grotesk", sans-serif; letter-spacing: -.07em; }
 .project-desc { max-width: 700px; font-size: clamp(18px, 2vw, 28px); line-height: 1.35; }
-.project-card > a { width: 58px; height: 58px; border: 1px solid var(--ink); border-radius: 50%; display: grid; place-items: center; font-size: 25px; transition: .2s; }
-.project-card > a:hover { background: var(--ink); color: white; transform: rotate(12deg); }
+.project-links { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+.project-links a { min-width: 88px; height: 44px; padding: 0 13px; border: 1px solid var(--ink); border-radius: 999px; display: flex; align-items: center; justify-content: space-between; gap: 9px; font-size: 18px; transition: .2s; }
+.project-links a span { font: 700 10px/1 "Space Grotesk", sans-serif; letter-spacing: .1em; }
+.project-links a:hover { background: var(--ink); color: white; transform: rotate(3deg); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 34px; }
 .tags span { border: 1px solid currentColor; border-radius: 999px; padding: 7px 11px; font-size: 11px; font-weight: 700; }
 .card-lime { background: var(--lime); }
@@ -190,9 +192,9 @@ body.mood-blue .mascot-stage::before { transform: scale(.92) rotate(8deg); borde
   .brain-heading, .work-intro { grid-template-columns: 1fr; }
   .mode-grid { grid-template-columns: 1fr; }
   .blue-card { transform: none; }
-  .work { min-height: 3000px; }
+  .work { min-height: 2250px; }
   .project-card { grid-template-columns: 44px 1fr; }
-  .project-card > a { position: absolute; right: 22px; top: 22px; }
+  .project-links { position: absolute; right: 22px; top: 22px; flex-direction: row; }
   .manifesto-row { grid-template-columns: 1fr; }
   .manifesto-row span { border-right: 0; border-bottom: 1px solid; }
   .manifesto-row span:last-child { border-bottom: 0; }
@@ -211,12 +213,14 @@ body.mood-blue .mascot-stage::before { transform: scale(.92) rotate(8deg); borde
   .section { padding: 82px 20px; }
   .brain h2, .work h2 { font-size: 18vw; }
   .mode-card { min-height: 380px; }
-  .work { min-height: 2850px; }
+  .work { min-height: 2150px; }
   .work-intro { min-height: 62vh; }
   .project-stack { top: 78px; height: 72vh; }
   .project-card { padding: 24px; grid-template-columns: 1fr; border-radius: 22px; }
   .project-number { display: none; }
-  .project-card h3 { font-size: 15vw; margin-top: 62px; }
+  .project-links { position: static; flex-direction: row; align-items: center; justify-content: flex-start; margin-top: 18px; }
+  .project-links a { min-width: 78px; height: 40px; }
+  .project-card h3 { font-size: 15vw; margin-top: 36px; }
   .project-desc { font-size: 17px; }
   footer h2 { font-size: 18vw; }
 }
